@@ -1,18 +1,38 @@
-🚀 Teoriyi Pratiğe Döktüm: İlk Kapsamlı C++ Projem "ANONSİM" Yayında!
+# ANONSİM: Anon Network & Marketplace
 
-Kahramanmaraş İstiklal Üniversitesi Bilgisayar Mühendisliği / Yazılım Mühendisliği bünyesinde aldığım YZM102 Algoritma ve Programlamaya Giriş II dersi için geliştirdiğim dönem projemi tamamladım ve GitHub'a yükledim!
+## Proje Hakkında
+### Bu proje, C++ ile geliştirilmiş terminal tabanlı bir gizli ağ ve pazar yeri simülasyonudur.
+### Algoritma ve Programlamaya Giriş II dersi kapsamında bir öğrenci projesi olarak tasarlanmıştır.
+### Temel amacı; dosya okuma/yazma işlemleri, basit kriptografi ve algoritma mantığını pratik bir konsol uygulamasında birleştirmektir.
 
-Derste öğrendiğimiz döngüler, fonksiyonlar ve temel mantığın çok daha ötesine geçerek; öğrendiğim teorik bilgileri somut ve çalışan bir sisteme dönüştürmek harika bir deneyim oldu. Projem, console tabanlı çalışan bir "Anonim Ağ ve Pazar Yeri (ANON NETWORK & MARKETPLACE)" simülasyonu.
+## Temel Özellikler
 
-Projede hayata geçirdiğim ve bana çok şey katan teknik detaylar:
-🔹 Dosya İşlemleri (fstream): Kullanıcı veritabanını, şifreli mesajları ve pazar yerindeki ürünleri kalıcı olarak text dosyalarında sakladım ve anlık olarak manipüle ettim.
-🔹 Kriptografi & Şifreleme: Mesajlaşma sisteminin güvenliği için Vigenere şifreleme/deşifreleme algoritmalarını entegre ettim.
-🔹 Güvenli Veri Saklama (Hashing): Kullanıcı parolalarını veritabanında açık metin olarak tutmamak adına DJB2 tabanlı bir Hash fonksiyonu yazarak şifreleri maskeledim.
+### 1. Güvenli Kayıt ve Giriş Sistemi
+#### Sisteme kayıt olan kullanıcıların parolaları düz metin yerine DJB2 hash algoritması kullanılarak saklanır.
+#### Kullanıcı verileri "veritabani.txt" dosyasına kaydedilir ve giriş doğrulamaları bu dosya üzerinden güvenli şekilde yapılır.
 
-Kod yazarken bolca hata (bug) çözdüm, veritabanı okuma mantığını oturtmak için saatlerce uğraştım ama günün sonunda her şeyin tıkır tıkır çalıştığını görmek tüm yorgunluğumu aldı. Bu süreçte desteğini esirgemeyen Dr. Öğr. Üyesi İbrahim Aruk hocama da teşekkür ederim.
+### 2. Şifreli Mesajlaşma Ağı
+#### Kullanıcılar birbirlerine Vigenere şifreleme algoritması kullanarak uçtan uca şifreli mesajlar gönderebilir.
+#### Gelen kutusundaki mesajları deşifre edip okuyabilmek için, göndericinin belirlediği özel şifreleme anahtarının bilinmesi zorunludur.
 
-Projeyi incelemek, kod mimarisi hakkında geri bildirimde bulunmak veya "Şurayı şöyle yapsan daha performanslı olurdu" demek isterseniz GitHub repomun linkini aşağıya bırakıyorum. Her türlü eleştiriye açığım! 💻✨
+### 3. Anonim Ticaret ve Pazar Yeri
+#### Aktif kullanıcılar, pazar yerine belirledikleri fiyatlarla yeni ürünler ekleyebilir ("urunler.txt" dosyasına işlenir).
+#### Pazaryerindeki mevcut ürünler listelenebilir ve terminal üzerinden basit bir satın alma simülasyonu gerçekleştirilebilir.
 
-🔗 GitHub Proje Linki: [Buraya GitHub linkini ekleyebilirsin]
+## Kurulum ve Çalıştırma
 
-#cpp #programming #softwareengineering #github #learning #coding #cryptography #algorithm
+### Projeyi derlemek için C++11 veya üzeri standartları destekleyen bir derleyiciye (GCC, MinGW vb.) ihtiyacınız vardır.
+### Kaynak kodu derlemek için terminalinizde veya komut istemcinizde g++ main.cpp -o anonsim komutunu çalıştırabilirsiniz.
+### Programı başlatmak için derlenen dosyayı Windows ortamında anonsim.exe, Linux/Mac ortamında ./anonsim yazarak açabilirsiniz.
+### Türkçe karakterlerin konsolda düzgün görüntülenmesi için Windows terminalinin UTF-8 (65001) formatında çalışması sağlanmıştır.
+
+## Kullanılan Teknolojiler ve Kütüphaneler
+### Geliştirme dili olarak standart C++ kullanılmıştır.
+### Veri akışı ve dosya işlemleri için <iostream>, <string> ve <fstream> kütüphanelerinden faydalanılmıştır.
+### Şifreleme algoritmalarındaki karakter dönüşümleri için <cctype>, konsol dil kodlaması için <windows.h> kütüphaneleri kullanılmıştır.
+
+## Akademik Bilgiler
+### Kurum: Kahramanmaraş İstiklal Üniversitesi
+### Ders: YZM102 Algoritma ve Programlamaya Giriş II
+### Proje: ANONSİM Konsol Uygulaması
+### Geliştirici: Mustafa Kaan Çelik (25020091020)
